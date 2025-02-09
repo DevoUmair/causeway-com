@@ -1,0 +1,113 @@
+.map{
+    position: relative;
+    width: 100%;
+    margin-top: 120px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-head{
+    margin: 30px;
+}
+
+.contct-details{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    width: 100%;
+    max-width: 1200px;
+    background: #111111;
+    padding: 40px 40px;
+
+}
+
+.contct-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contct-details .head{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.contct-details .head h1{
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.contct-details .head img{
+    width: 40px;
+}
+
+.contct-details h3{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    font-size: 25px;
+}
+
+.contct-details p{
+    color: #9F9E9E;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 300px;
+}
+
+.contct-details button{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    background:#cf2e2e;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contct-details button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (min-width:200px) and (max-width:1000px){
+    .contct-details{
+             display: none;
+    }
+    .map{
+        position: relative;
+        width: 100%;
+        margin-top: 100px;
+        height: 300px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .map iframe{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:420px){
+    .location-head h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:350px){
+    .location-head h1{
+        font-size: 22px;
+    }
+}

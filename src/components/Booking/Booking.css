@@ -1,0 +1,139 @@
+.Booking-continer{
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    margin: 70px auto;
+}
+
+.Booking-head {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Booking-head .booking{
+    display: flex;
+    gap: 1rem;
+}
+
+.Booking-head  p{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 17px;
+    color: #9F9E9E;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Booking-head img{
+    width: 40px;
+}
+
+.Booking-head h1{
+    color: #fff;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.Boooking-body{
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(350px , 1fr));
+    grid-column-gap:1rem;
+    grid-row-gap:1rem;
+    padding: 0px 22px;
+}
+
+.Boooking-body .each-bookoing{
+    border: 2px solid #9F9E9E;
+    height: 300px;
+    background: #070707;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    box-shadow: 0 10px 30px -15px rgba(7, 7, 7, 0.7);
+}
+
+.Boooking-body .each-bookoing .sec-continer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    padding: 22px 0px;
+}
+
+.Boooking-body .each-bookoing .sec-continer img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 400px;
+    filter: grayscale(100%);
+    transition: all 0.2s ease-in-out;
+}
+
+.Boooking-body .each-bookoing:hover .sec-continer img{
+    filter: grayscale(0%);
+    transition: all 0.2s ease-in-out;
+}
+
+.Boooking-body .each-bookoing:hover{
+    background: #1f141477;
+    transition: all 0.2s ease-in-out;
+}
+
+.Boooking-body .each-bookoing .sec-continer h1{
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-weight: 900;
+    font-size: 14;
+}
+
+.Boooking-body .each-bookoing button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   outline: none;
+   border: none;
+   padding: 15px 25px;
+   background:#9F9E9E;
+   font-weight: 1000;
+   border-radius: 22px 0px 0px 0px;
+   z-index: 1;
+   cursor: pointer;
+   
+}
+
+.Boooking-body .each-bookoing button a:hover{
+    color: #DF0E03;
+    transition: 0.2s all linear;
+}
+
+.Boooking-body .each-bookoing button a{
+    text-decoration: none;
+    color: #000100;
+    transition: 0.2s all linear;
+}
+
+@media screen and (min-width:200px) and (max-width:450px){
+    .Boooking-body .each-bookoing .sec-continer img{
+        width: 300px;
+    }
+    .Boooking-body{
+        grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:390px){
+    .Booking-head  p{
+        font-size: 14PX;
+    }
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,700&family=Oswald:wght@400;500&family=Oxygen:wght@300;400&family=Poppins:ital,wght@0,300;0,400;0,500;1,400&family=Rajdhani:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Fira+Mono:wght@400;500;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #000100;
+  position: relative;
+}
+
+
+
+:root{
+  scrollbar-face-color: #C9B287; 
+  scrollbar-track-color: #000; 
+  scrollbar-color: #C9B287;
+  scrollbar-width: thin;
+  scrollbar-shadow-color: #C9B287;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #000100;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #C9B287;
+  border-radius: 12px;
+}

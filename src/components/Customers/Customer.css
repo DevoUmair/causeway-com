@@ -1,0 +1,157 @@
+.testi-continer{
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    margin: 90px auto;
+}
+
+.testi-head{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testi-head .booking{
+    display: flex;
+    gap: 1rem;
+}
+
+.testi-head p{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 17px;
+    color: #9F9E9E;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testi-head img{
+    width: 40px;
+}
+
+.testi-head h1{
+    color: #fff;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+.testi-head .testi{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.gallery{
+    width: 90%;
+    max-width: 1240px;
+    margin: 100px auto 0px;
+}
+
+
+.gallery h2{
+    font-family: 'DM Serif Display', serif;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 2.3px;
+    margin-bottom: 50px;
+}
+
+.gallery h2 span{
+    position: relative;
+    font-style: italic;
+    color: #DBAD83;
+}
+
+.gallery h2 span::before{
+    content: '';
+   position: absolute;
+   width:50%;
+   height:3px;
+   border-radius: 22px;
+   background-color: #DBAD83;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   transition: all 0.2s linear;
+}
+
+.gallery-cont .gallery-img{
+  position: relative;
+  margin: 60px auto;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  overflow: hidden;
+  background-color: rgb(39, 13, 5);
+  border-radius: 22px;
+}
+
+.gallery-img img{
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: none;
+    border-radius: 22px;
+}
+
+/* .gallery-cont{
+    position: relative;
+    margin: 60px auto;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+@media screen and (min-width:200px) and (max-width:600px){
+    .gallery h2{
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+    }  
+
+    .gallery h2 span{
+        font-size: 48px;
+    }
+
+    .gallery h2 span::before{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:400px){
+
+    .gallery{
+        margin: 100px auto;
+    }
+
+    .gallery h2 span::before{
+        width: 40%;
+    }
+
+    .gallery h2 span{
+        font-size: 35px;
+    }
+
+    .gallery h2{
+        font-size: 23px;
+    }  
+
+}
+
+@media screen and (min-width:200px) and (max-width:400px){
+    .gallery-cont .gallery-img{
+        width: 95%;
+        height: 340px;
+    }
+
+    .gallery{
+        width: 90%;
+    }
+}

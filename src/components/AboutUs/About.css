@@ -1,0 +1,200 @@
+.AboutUs-continer{
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    margin: 70px auto;
+    padding: 0px 22px;
+}
+
+.About-us-head {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.About-us-head .about{
+    display: flex;
+    gap: 1rem;
+}
+
+.About-us-head p{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 17px;
+    color: #9F9E9E;
+    font-family: 'Poppins', sans-serif;
+}
+
+.About-us-head img{
+    width: 40px;
+}
+
+.About-us-head h1{
+    color: #fff;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.About-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    margin: 70px 0px;
+}
+
+.left-side{
+    flex: 0.5;
+    height: 100%;
+    padding: 22px;
+}
+
+.right-side{
+    flex: 0.5;
+    height: 100%;
+    background: #312f2f;
+    height: 100%;
+    padding: 22px 10px 22px 22px ;
+}
+
+.left-side h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: #fff;
+    margin: 20px 0px;
+}
+
+.left-side  p{
+    color: #9F9E9E;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Photo-cont{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0px;
+}
+
+.Photo-cont img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+.Photo-cont  .photo-info{
+    color: #fff;
+    margin-left: 20px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.Photo-cont  .photo-info h3{
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+.Photo-cont  .photo-info h5{
+    font-size: 15px;
+}
+
+.right-head{
+    font-family: 'Rajdhani', sans-serif;
+    margin-bottom: 30px;
+}
+
+.right-head .why{
+    color: #C9B287;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.right-head .book{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.each-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 52px 0px;
+    gap: 0.9rem;
+}
+
+.each-item .Icons{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #cf2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.each-item .Icons svg{
+    color: #fff;
+    font-size: 25px;
+}
+
+.each-item .item-info{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.each-item .item-info h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+}
+
+.each-item .item-info p{
+    width: 100%;
+    max-width: 300px;
+    color: #9F9E9E;
+    font-weight: 600;
+}
+
+@media screen and (min-width:200px) and (max-width:800px){
+    .About-body{
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .left-side{
+        flex: 1;
+    }
+    .right-side{
+        flex: 1;
+        width: 100%;
+    }
+    .About-body{
+        margin: 30px 0px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:410px){
+    .each-item .item-info h3{
+        font-size: 20px;
+    }
+    .right-head h2{
+        font-size: 28px;
+    }
+    .left-side h1{
+        font-size: 30px;
+    }
+    .left-side p{
+        font-size: 13px;
+    }
+    .right-head .book{
+        font-size: 28px;
+    }
+    .each-item .item-info p{
+        font-size: 13px;
+    }
+   
+}

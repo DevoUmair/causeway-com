@@ -1,0 +1,97 @@
+.banner-continer{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.616)),url('https://www.teahub.io/photos/full/193-1935317_red-car-dark-background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%,-50%);
+    padding: 0 52px;
+}
+
+.banner-content h1{
+    color: #DF0E03;
+    font-size: 130px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner-content h2{
+    color: #fff;
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner-content button{
+    position: relative;
+    background:#9F9E9E;
+    border: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 200px;  
+    cursor: pointer;
+    border-radius: 22px;
+}
+
+
+
+.banner-content button span{
+    color: #000100;
+    display: inline-block;
+    z-index: 2;
+}
+
+@media screen and (min-width:200px) and (max-width:900px){
+    .banner-content h2{
+        font-size: 70px;
+    }
+
+    .banner-content button{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:700px){
+    .banner-content{
+        width: 100%;
+        max-width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        padding: 0px 12px;
+    }
+
+    .banner-content h1{
+        color: #DF0E03;
+        font-size: 60px;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .banner-content h2{
+        font-size: 50px;
+    }
+
+    .banner-content button{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:415px){
+    .banner-content h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:340px){
+    .banner-content h2{
+        font-size: 32px;
+    }
+}

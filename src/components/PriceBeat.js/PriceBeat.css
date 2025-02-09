@@ -1,0 +1,290 @@
+.my-build{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 120px auto;
+    padding: 0 22px;
+}
+
+.my-build-continer h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono';
+    color: #ccd6f6;
+}
+
+.my-build-continer h2 span{
+    color: #64ffda;
+    margin-right: 12px;
+}
+
+.my-build-continer h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 1px;
+    background: #233554;
+    margin-left: 400px;
+}
+
+.project{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    margin-top: 70px;
+    position: relative;
+}
+
+
+.project-template-2{
+    justify-content: flex-end;
+}
+
+.project-template-2  .prjct-content{
+    left: 0;
+}
+
+.project-template-2 .prjct-content p  , .project-template-2 .prjct-content h3{
+    text-align: left;
+    width: 100%;
+}
+
+.project-template-2 .prjct-content ul{
+    justify-content: flex-start;
+}
+
+
+.project .prjct-img-content{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    z-index: 1;
+    border-radius: 9px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+.project .prjct-img-content img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1;
+    border-radius: 9px;
+}
+
+.project .prjct-img-content .shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #1c1c1c8e;
+    border-radius: 9px;
+    transition: all 0.3s linear;
+}
+
+.prjct-content p , .prjct-content h3{
+    text-align: right;
+    width: 100%;
+}
+
+.prjct-content ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.prjct-content{
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    z-index: 3;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prjct-content .project-content-p{
+    width: 100%;
+    background: #111111;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    padding: 22px 20px;
+    border-radius: 9px;
+}
+
+.prjct-content .project-content-p h1{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin: 16px 0px;
+}
+
+.pcp-h{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+}
+
+.pcp-h svg{
+    fill: #C9B287;;
+    font-size: 30px;
+}
+
+.prjct-content .project-content-p p{
+    width: 100%;
+    line-height: 25px;
+    text-align: left;
+    color: #9F9E9E;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.prjct-content .project-content-p p span{
+    color: #DF0E03;
+}
+
+.prjct-content .fetured{
+    color: #64ffda;
+    margin-bottom: 12px;
+    font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono';
+}
+
+.prjct-content h3{
+    font-size: 20px;
+    font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+    color: #ccd6f6;
+    margin-bottom: 20px;
+}
+
+.prjct-content ul li{
+    list-style: none;
+    color: #a8b2d1;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono';
+}
+
+.prjct-content ul li:not(:last-child){
+    margin-right: 25px;
+}
+
+.links  li svg{
+    color: #a8b2d1;
+    transition: linear;
+    font-size: 18px;
+}
+
+.links li svg:hover{
+    color: #64ffda;
+    transition: linear;
+}
+
+.links{
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.project .prjct-img-content:hover .shadow{
+    background: transparent;
+    transition: all 0.3s linear;
+}
+
+@media screen and (min-width:200px) and (max-width:750px){
+
+    .my-build-continer h2{
+        font-size: 18px;
+    } 
+
+    .my-build{
+        width: 100%;
+        height: 100%;
+        max-width: 1000px;
+        margin: 70px auto 90px;
+        padding: 0 22px;
+    }
+
+    
+    .my-build-continer h2::before{
+           width: 30%;
+           margin-left: 300px;
+    }
+
+    .prjct-content .project-content-p{
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .project .prjct-img-content .shadow{
+        display: none;
+    }
+
+    .project .prjct-img-content{
+        background: #1c1c1c;
+        height: 300px;
+    }
+
+    .project .prjct-img-content img{
+          opacity: 0.1;
+    }
+    
+    .prjct-content{
+          padding: 0px 22px;
+    }
+
+    .prjct-content h3 , .prjct-content p{
+        text-align: left;
+    }
+
+    
+    .prjct-content ul{
+        justify-content: flex-start;
+        grid-template-columns: repeat(auto-fit , minmax(150px , 1fr));
+        
+    }
+
+    .prjct-content ul li:not(:last-child){
+        margin-right: 17px;
+    }
+
+    .prjct-content ul li{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width:200px) and (max-width:500px){
+    .my-build-continer h2::before{
+        width: 20%;
+        margin-left: 300px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:400px){
+    .my-build-continer h2::before{
+        width: 10%;
+        margin-left: 300px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:390px){
+    
+    .prjct-content .project-content-p h1{
+        font-size: 21px;
+    }
+}

@@ -1,0 +1,160 @@
+.Nav-continer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 52px;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+.Nav_black{
+    background: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.Nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.img-continer{
+    flex: 0.2;
+    /* background-color: bisque; */
+}
+
+.Nav-wrapper img{
+    width: 100px;
+
+}
+
+.Nav-wrapper ul{
+    flex: 0.45;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+
+.Nav-wrapper ul li{
+    list-style: none;
+}
+
+.Nav-wrapper ul li a{
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #9F9E9E;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.contact-continer{
+    /* background-color: bisque; */
+    flex: 0.35;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.contact-continer .button-con{
+     text-transform: uppercase;
+     font-size: 16px;
+     font-weight: 600;
+     background:#9F9E9E;
+     border: none;
+     outline: none;
+     padding: 0px 22px;
+     border-radius: 8px;
+     cursor: pointer;
+     height: 50px;
+}
+
+.contact-continer .button-con a{
+    text-decoration: none;
+    color: #000100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.contact-continer .button-con a svg{
+    font-size: 28px;
+}
+
+.Nav-wrapper ul li a:hover{
+    color: #DF0E03;
+    transition: all 0.2s linear;
+}
+
+.burger{
+    display: none;
+}
+
+
+
+@media screen and (min-width:200px) and (max-width:1000px){
+    .contact-continer{
+        display: none;
+    }
+
+    .Nav-wrapper ul{
+        flex: 0.7;
+    }
+}
+
+
+@media screen and (min-width:200px) and (max-width:700px){
+    .Nav-wrapper ul{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:200px) and (max-width:700px){
+    .burger{
+        display: block;
+    }
+    .Nav-continer{
+        padding: 0px 22px;
+    }
+
+}
+
+
+
+.burger{
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #9F9E9E;
+    margin: 5px 0px;
+    position: relative;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg )  translate(-5px,6px);
+    transition: all .3s linear ;
+}
+
+.toggle .line2{
+        opacity: 0;
+        transition: all .3s linear ;
+}
+
+.toggle .line3{
+    transform: rotate(45deg)  translate(-5px,-6px);
+    transition: all .3s linear ;
+}

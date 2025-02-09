@@ -1,0 +1,95 @@
+
+
+.call{
+	position:fixed;
+	font-size:30px;
+	width:55px;
+	height:55px;
+	bottom:10px;
+	right:10px;
+	background-color:#0088CC;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.whatsapp{
+	position:fixed;
+	font-size:30px;
+	width:55px;
+	height:55px;
+	bottom:35px;
+	right:20px;
+	background-color:#4FCE5D;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+
+.whatsapp svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+.my-float{
+	margin-top:12px;
+}
+
+.call:before{
+  position:absolute;
+  content:'';
+  border:12px solid #0088CC;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  border-radius:50%;
+  animation:animate 2s linear infinite;
+}
+.call:after{
+  position:absolute;
+  content:'';
+  border:12px solid #0088CC;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  border-radius:50%;
+  animation:animate 2s 1s linear infinite;
+}
+
+.whatsapp:before{
+  position:absolute;
+  content:'';
+  border:12px solid #4FCE5D;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  border-radius:50%;
+  animation:animate 2s linear infinite;
+}
+.whatsapp:after{
+  position:absolute;
+  content:'';
+  border:12px solid #4FCE5D;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  border-radius:50%;
+  animation:animate 2s 1s linear infinite;
+}
+
+@keyframes animate{
+  100%{
+    transform:scale(1.5);
+    opacity:0
+  }
+}

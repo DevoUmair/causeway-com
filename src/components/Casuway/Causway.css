@@ -1,0 +1,93 @@
+.Causway-continer{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('https://quattro.true-emotions.studio/black/wp-content/uploads/sites/3/2019/11/269.jpg?id=1456');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 20px 0px;
+}
+
+.Causway-wrapper{
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(350px , 1fr));
+    grid-column-gap:5rem;
+    grid-row-gap:1rem;
+}
+
+.causway-sec{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 20px;
+}
+
+.causway-sec img{
+    width: 90px;
+    margin: 16px 0px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.causway-sec p{
+    text-align: center;
+    margin: 16px 0px;
+    color: #9F9E9E;
+    font-family: 'Poppins', sans-serif;
+}
+
+.causway-sec h2{
+    color: #fff;
+    margin: 16px 0px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.causway-sec button{
+    position: relative;
+    background:#cf2e2e;
+    border: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 200px;  
+    cursor: pointer;
+    margin: 12px 0px;
+    color: #fff;
+}
+
+.causway-sec img:hover{
+    transform: scale(1.2);
+}
+
+.causway-sec svg{
+    font-size: 90px;
+    color: #cf2e2e;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.causway-sec svg:hover{
+    transition: all 0.2s;
+    transform: scale(1.2);
+}
+
+@media screen and (min-width:200px) and (max-width:770px){
+    .causway-sec{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .causway-sec{
+        padding: 15px 20px;
+    }
+}
