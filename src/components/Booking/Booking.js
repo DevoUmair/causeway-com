@@ -48,7 +48,7 @@ function Booking() {
                   {
                     booking.map((book , index) => (
                         <div className='each-bookoing' data-aos='fade-up' key={index}>
-                            <button><a href={`https://wa.me/60139277180?text= Hey Causeway ! May I know, Do you have any ${book.vehicaleName}  cars available to book ?`}>BOOK NOW <BsFillArrowDownRightSquareFill /></a></button>
+                            <button><a href={`https://wa.me/60166201542?text= Hey Causeway ! May I know, Do you have any ${book.vehicaleName}  cars available to book ?`}>BOOK NOW <BsFillArrowDownRightSquareFill /></a></button>
                             <div className='sec-continer'>
                                 <h1>{book.vehicaleName}</h1>
                                 <img src={book.image} alt={book.vehicaleName} />

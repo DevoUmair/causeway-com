@@ -32,7 +32,7 @@ function Footer() {
                    <ul>
                        <li><a rel="noreferrer"  href='https://www.instagram.com/causewaycarrentaljb' target='_blank' ><FaInstagram /></a></li>
                        <li><a rel="noreferrer" href='https://m.facebook.com/CausewayCarRentalJB/' target='_blank' ><GrFacebookOption /></a></li>
-                       <li><a rel="noreferrer" href='https://wa.me/+60139277180' target='_blank' ><BsWhatsapp /></a></li>
+                       <li><a rel="noreferrer" href='https://wa.me/+60166201542' target='_blank' ><BsWhatsapp /></a></li>
                    </ul>
               </div>
         </div>

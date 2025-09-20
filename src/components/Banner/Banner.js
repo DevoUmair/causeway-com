@@ -9,7 +9,7 @@ function Banner() {
        <div className='banner-content'>
              <motion.h1 animate={{opacity:1 , y:0}} exit={{opacity:0 , y:0}} initial={{opacity:0 , y:'20px'}} transition={{duration:0.5 , delay:0.5}}>Experience </motion.h1>
              <motion.h2 animate={{opacity:1 , y:0}} exit={{opacity:0 , y:0}} initial={{opacity:0 , y:'20px'}} transition={{duration:0.5 , delay:1}}>Best with us</motion.h2>
-             <motion.button animate={{opacity:1 , y:0}} exit={{opacity:0 , y:0}} initial={{opacity:0 , y:'20px'}} transition={{duration:0.5 , delay:1.5}}> <a href='https://wa.me/+60139277180' target='_blank'><span>BOOK NOW</span></a> </motion.button>
+             <motion.button animate={{opacity:1 , y:0}} exit={{opacity:0 , y:0}} initial={{opacity:0 , y:'20px'}} transition={{duration:0.5 , delay:1.5}}> <a href='https://wa.me/+60166201542' target='_blank'><span>BOOK NOW</span></a> </motion.button>
        </div>
     </motion.div>
   )
